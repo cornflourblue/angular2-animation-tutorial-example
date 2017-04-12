@@ -1,0 +1,17 @@
+﻿<h1>Products</h1>
+<a routerLink="add" class="btn btn-default">Add Product</a>
+<table class="table products-table">
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th class="delete-column"></th>
+    </tr>
+    <tr *ngFor="let product of products">
+        <td><a>{{product.name}}</a></td>
+        <td>${{product.price}}</td>
+        <td><a class="btn btn-xs btn-danger">Delete</a></td>
+    </tr>
+</table>
+<div class="view-side-form">
+    <router-outlet></router-outlet>
+</div>
