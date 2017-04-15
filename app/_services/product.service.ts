@@ -7,7 +7,7 @@ export class ProductService {
     }
 
     getById(id: number) {
-        return this.getProducts().filter(product => product.id === id);
+        return this.getProducts().find(product => product.id === id);
     }
 
     save(product: any) {

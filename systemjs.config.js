@@ -1,5 +1,5 @@
 ﻿/**
- * System configuration for Angular 2 samples
+ * System configuration for Angular 2/4 samples
  * Adjust as necessary for your application needs.
  */
 (function (global) {

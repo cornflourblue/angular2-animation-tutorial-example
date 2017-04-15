@@ -1,11 +1,12 @@
 ﻿import { Component } from '@angular/core';
-import { fadeIn } from '../_helpers/animations';
+
+import { fadeInAnimation } from '../_animations/index';
 
 @Component({
     moduleId: module.id.toString(),
     templateUrl: 'home.component.html',
-    animations: [fadeIn()],
-    host: { '[@fadeIn]': '' }
+    animations: [fadeInAnimation],
+    host: { '[@fadeInAnimation]': '' }
 })
 
 export class HomeComponent {

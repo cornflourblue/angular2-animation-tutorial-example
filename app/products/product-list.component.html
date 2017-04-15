@@ -7,7 +7,7 @@
         <th class="delete-column"></th>
     </tr>
     <tr *ngFor="let product of products">
-        <td><a>{{product.name}}</a></td>
+        <td><a [routerLink]="['edit', product.id]">{{product.name}}</a></td>
         <td>${{product.price}}</td>
         <td><a class="btn btn-xs btn-danger">Delete</a></td>
     </tr>

@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule, routedComponents } from './app-routing.module';
-import { ProductService } from './_services/index';
+import { ProductService, PubSubService } from './_services/index';
 
 @NgModule({
     imports: [
@@ -19,7 +19,8 @@ import { ProductService } from './_services/index';
         routedComponents
     ],
     providers: [
-        ProductService
+        ProductService,
+        PubSubService
     ],
     bootstrap: [AppComponent]
 })

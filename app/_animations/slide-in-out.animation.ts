@@ -1,21 +1,7 @@
 ﻿import { trigger, state, animate, transition, style } from '@angular/animations';
 
-export function fadeIn() {
-    return trigger('fadeIn', [
-        // route 'enter' transition
-        transition(':enter', [
-
-            // styles at start of transition
-            style({ opacity: 0 }),
-
-            // animation and styles at end of transition
-            animate('.3s', style({ opacity: 1 }))
-        ]),
-    ]);
-}
-
-export function slideInOut() {
-    return trigger('slideInOut', [
+export const slideInOutAnimation =
+    trigger('slideInOutAnimation', [
 
         // end state styles for route container (host)
         state('*', style({
@@ -62,5 +48,4 @@ export function slideInOut() {
                 backgroundColor: 'rgba(0, 0, 0, 0)'
             }))
         ])
-    ])
-}
+    ]);
