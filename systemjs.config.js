@@ -27,9 +27,7 @@
             '@angular/platform-browser/animations': 'npm:@angular/platform-browser/bundles/platform-browser-animations.umd.js',
 
             // other libraries
-            'rxjs': 'npm:rxjs',
-            'underscore': 'npm:underscore/underscore.js',
-            'jquery': 'npm:jquery/dist/jquery.js'
+            'rxjs': 'npm:rxjs'
         },
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {
