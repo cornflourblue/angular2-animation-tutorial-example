@@ -13,7 +13,7 @@ import { ProductService, PubSubService } from '../_services/index';
 
 export class ProductAddEditComponent implements OnInit {
     title = "Add Product";
-    product: any;
+    product: any = {};
 
     constructor(
         private route: ActivatedRoute,
