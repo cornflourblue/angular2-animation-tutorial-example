@@ -1,13 +1,19 @@
 ﻿import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 
-import { fadeInAnimation } from '../_animations/index';
 import { ProductService, PubSubService } from '../_services/index';
+
+// import fade in animation
+import { fadeInAnimation } from '../_animations/index';
 
 @Component({
     moduleId: module.id.toString(),
     templateUrl: 'product-list.component.html',
+
+    // make fade in animation available to this component
     animations: [fadeInAnimation],
+
+    // attach the fade in animation to the host (root) element of this component
     host: { '[@fadeInAnimation]': '' }
 })
 

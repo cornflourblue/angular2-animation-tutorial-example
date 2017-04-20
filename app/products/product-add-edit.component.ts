@@ -1,18 +1,24 @@
 ﻿import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
-import { slideInOutAnimation } from '../_animations/index';
 import { ProductService, PubSubService } from '../_services/index';
+
+// import slide in/out animation
+import { slideInOutAnimation } from '../_animations/index';
 
 @Component({
     moduleId: module.id.toString(),
     templateUrl: 'product-add-edit.component.html',
+
+    // make slide in/out animation available to this component
     animations: [slideInOutAnimation],
+
+    // attach the slide in/out animation to the host (root) element of this component
     host: { '[@slideInOutAnimation]': '' }
 })
 
 export class ProductAddEditComponent implements OnInit {
-    title = "Add Product";
+    title = 'Add Product';
     product: any = {};
 
     constructor(
